@@ -1,0 +1,36 @@
+.cellOuterContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 225px;
+  text-align: center;
+}
+.cell {
+  width: 75px;
+  height: 75px;
+  border: 1px solid black;
+  font-size: 3.5rem;
+}
+.outerContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.buttonsContainer {
+  display: flex;
+  gap: 8px;
+}
+.buttons {
+  padding: 8px 16px;
+  background-color: rgb(20, 111, 197);
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.buttons:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
