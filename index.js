@@ -50,6 +50,7 @@ const resetTheGame = () => {
   isCurrentPlayerX = true;
   gameInfo.innerHTML = "Click on start button to start the game";
   startButton.disabled = false;
+  resetButton.disabled = true;
   isGameStarted = false;
   choiceCount = 0;
   cells.forEach((cell) => {
@@ -61,6 +62,9 @@ const handleCellClick = (index, cell) => {
     return;
   }
   const currentPlayer = isCurrentPlayerX ? "X" : "O";
+  cell.style.color = isCurrentPlayerX
+    ? "rgb(84, 84, 84)"
+    : "rgb(242, 235, 211)";
   const nextPlayer = isCurrentPlayerX ? "O" : "X";
   choiceCount += 1;
   playersChoices[index] = currentPlayer;
